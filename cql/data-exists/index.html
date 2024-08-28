@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Criteria: Data Exists Reference - Crowdskout Developer Documentation</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Crowdskout Developer Documentation</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+        <span>Developing Email Templates</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates">Main Documentation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/attribute-reference">Attribute Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/variable-reference">Variable Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/example-template">Example Template</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/testing-template">Testing Templates</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Crowdskout Query Language</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="..">Main Documentation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../demographics">Criteria: Demographics Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../address">Criteria: Address Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../affiliations">Criteria: Affiliations Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../civic">Criteria: Civic Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 current">
+                    <a class="current" href=".">Criteria: Data Exists Reference</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l2"><a href="#data-exists">Data Exists</a></li>
+                            
+                                <li><a class="toctree-l3" href="#name-exists">Name Exists</a></li>
+                            
+                                <li><a class="toctree-l3" href="#phone-exists">Phone Exists</a></li>
+                            
+                                <li><a class="toctree-l3" href="#email-exists">Email Exists</a></li>
+                            
+                                <li><a class="toctree-l3" href="#address-exists">Address Exists</a></li>
+                            
+                                <li><a class="toctree-l3" href="#facebook-exists">Facebook Exists</a></li>
+                            
+                                <li><a class="toctree-l3" href="#twitter-exists">Twitter Exists</a></li>
+                            
+                                <li><a class="toctree-l3" href="#linkedin-exists">LinkedIn Exists</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../inferred-digital">Criteria: Inferred Digital Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../interactions">Criteria: Interactions Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../interests">Criteria: Interests Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../political-districts">Criteria: Political Districts Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../custom">Criteria: Custom</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../.."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    <li>Criteria: Data Exists Reference</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="data-exists">Data Exists</h1>
+<h2 id="name-exists">Name Exists</h2>
+<p>People for whom you know their name.</p>
+<h3 id="criterion-nameexists">Criterion <code>NameExists</code></h3>
+<ul>
+<li><code>Yes</code> - People who we know their name</li>
+<li><code>No</code> - People who we do not know their name</li>
+</ul>
+<h3 id="example">Example</h3>
+<p>People whose name we know:</p>
+<pre><code>(NameExists = &quot;Yes&quot;)
+</code></pre>
+
+<hr />
+<h2 id="phone-exists">Phone Exists</h2>
+<p>People for whom you know their phone number.</p>
+<h3 id="criterion-phoneexists">Criterion <code>PhoneExists</code></h3>
+<ul>
+<li><code>Yes</code> - People who we know their phone number</li>
+<li><code>No</code> - People who we do not know their phone number</li>
+</ul>
+<h3 id="filter">Filter</h3>
+<ul>
+<li><code>Usable</code> - People for whom their phone number is usable for marketing purposes.</li>
+</ul>
+<h3 id="example_1">Example</h3>
+<p>People whose phone number we know:</p>
+<pre><code>(PhoneExists = &quot;Yes&quot;)
+</code></pre>
+
+<p>People whose phone number we know, and we can call them:</p>
+<pre><code>(PhoneExists = &quot;Yes&quot;, Usable = &quot;Yes&quot;)
+</code></pre>
+
+<hr />
+<h2 id="email-exists">Email Exists</h2>
+<p>People for whom you know their email address.</p>
+<h3 id="criterion-emailexists">Criterion <code>EmailExists</code></h3>
+<ul>
+<li><code>Yes</code> - People who we know their email address</li>
+<li><code>No</code> - People who we do not know their email address</li>
+</ul>
+<h3 id="filter_1">Filter</h3>
+<ul>
+<li><code>Usable</code> - People for whom their email is usable for marketing purposes.</li>
+</ul>
+<h3 id="example_2">Example</h3>
+<p>People whose email address we know:</p>
+<pre><code>(EmailExists = &quot;Yes&quot;)
+</code></pre>
+
+<p>People whose email address we know, and we can send them email:</p>
+<pre><code>(EmailExists = &quot;Yes&quot;, Usable = &quot;Yes&quot;)
+</code></pre>
+
+<hr />
+<h2 id="address-exists">Address Exists</h2>
+<p>People for whom you know their address.</p>
+<h3 id="criterion-addressexists">Criterion <code>AddressExists</code></h3>
+<ul>
+<li><code>Yes</code> - People who we know their address</li>
+<li><code>No</code> - People who we do not know their address</li>
+</ul>
+<h3 id="filter_2">Filter</h3>
+<ul>
+<li><code>Usable</code> - People for whom their address is usable for marketing purposes.</li>
+</ul>
+<h3 id="example_3">Example</h3>
+<p>People whose address we know:</p>
+<pre><code>(AddressExists = &quot;Yes&quot;)
+</code></pre>
+
+<p>People whose address we know, and we can send them direct mail:</p>
+<pre><code>(AddressExists = &quot;Yes&quot;, Usable = &quot;Yes&quot;)
+</code></pre>
+
+<hr />
+<h2 id="facebook-exists">Facebook Exists</h2>
+<p>People for whom you know their Facebook ID.</p>
+<h3 id="criterion-facebookexists">Criterion <code>FacebookExists</code></h3>
+<ul>
+<li><code>Yes</code> - People who we know their Facebook ID</li>
+<li><code>No</code> - People who we do not know their Facebook ID</li>
+</ul>
+<h3 id="example_4">Example</h3>
+<p>People whose Facebook ID we know:</p>
+<pre><code>(FacebookExists = &quot;Yes&quot;)
+</code></pre>
+
+<hr />
+<h2 id="twitter-exists">Twitter Exists</h2>
+<p>People for whom you know their Twitter handle.</p>
+<h3 id="criterion-twitterexists">Criterion <code>TwitterExists</code></h3>
+<ul>
+<li><code>Yes</code> - People who we know their Twitter handle</li>
+<li><code>No</code> - People who we do not know their Twitter handle</li>
+</ul>
+<h3 id="example_5">Example</h3>
+<p>People whose Twitter handle we know:</p>
+<pre><code>(TwitterExists = &quot;Yes&quot;)
+</code></pre>
+
+<hr />
+<h2 id="linkedin-exists">LinkedIn Exists</h2>
+<p>People for whom you know their LinkedIn ID.</p>
+<h3 id="criterion-linkedinexists">Criterion <code>LinkedInExists</code></h3>
+<ul>
+<li><code>Yes</code> - People who we know their LinkedIn ID</li>
+<li><code>No</code> - People who we do not know their LinkedIn ID</li>
+</ul>
+<h3 id="example_6">Example</h3>
+<p>People whose LinkedIn ID we know:</p>
+<pre><code>(LinkedInExists = &quot;Yes&quot;)
+</code></pre>
+
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../inferred-digital" class="btn btn-neutral float-right" title="Criteria: Inferred Digital Reference"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../civic" class="btn btn-neutral" title="Criteria: Civic Reference"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../civic" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../inferred-digital" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>

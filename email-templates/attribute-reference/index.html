@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Attribute Reference - Crowdskout Developer Documentation</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Crowdskout Developer Documentation</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+        <span>Developing Email Templates</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="..">Main Documentation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 current">
+                    <a class="current" href=".">Attribute Reference</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l2"><a href="#attribute-reference">Attribute Reference</a></li>
+                            
+                                <li><a class="toctree-l3" href="#cs-editable">cs-editable</a></li>
+                            
+                                <li><a class="toctree-l3" href="#cs-format">cs-format</a></li>
+                            
+                                <li><a class="toctree-l3" href="#cs-button">cs-button</a></li>
+                            
+                                <li><a class="toctree-l3" href="#cs-link">cs-link</a></li>
+                            
+                                <li><a class="toctree-l3" href="#cs-placeholder">cs-placeholder</a></li>
+                            
+                                <li><a class="toctree-l3" href="#cs-src">cs-src</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../variable-reference">Variable Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../example-template">Example Template</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../testing-template">Testing Templates</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Crowdskout Query Language</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql">Main Documentation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql/demographics">Criteria: Demographics Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql/address">Criteria: Address Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql/affiliations">Criteria: Affiliations Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql/civic">Criteria: Civic Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql/data-exists">Criteria: Data Exists Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql/inferred-digital">Criteria: Inferred Digital Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql/interactions">Criteria: Interactions Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql/interests">Criteria: Interests Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql/political-districts">Criteria: Political Districts Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cql/custom">Criteria: Custom</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../.."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    <li>Attribute Reference</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="attribute-reference">Attribute Reference</h1>
+<p>This page contains all the custom HTML attributes Crowdskout allows along with examples and images of each.</p>
+<h2 id="cs-editable">cs-editable</h2>
+<p>The <code>cs-editable</code> attribute will take a given element and allow it to be editable. The client
+can now change the text within this given element.</p>
+<h3 id="example">Example</h3>
+<pre><code>&lt;div class=&quot;content&quot; cs-editable&gt;
+  Content you want to be editable.
+&lt;/div&gt;
+</code></pre>
+
+<h3 id="screenshot">Screenshot</h3>
+<p><img alt="cs-editable Screenshot" src="../../img/cs-editable.png" /></p>
+<hr />
+<h2 id="cs-format">cs-format</h2>
+<p>The <code>cs-format</code> attribute must be used with the <code>cs-editable</code> attribute on the same element. 
+<code>cs-format</code> allows the text within an element to be customized. The level of customization
+depends on which options you pass into the <code>cs-format</code> attribute. <code>cs-format</code> accepts a comma
+separated list of options.</p>
+<h3 id="options">Options</h3>
+<p>Pass in a comma delimited string of the below options to the attribute to allow the end-user
+to have these editing capabilities on the text wrapped in this element.</p>
+<ul>
+<li><code>h1,h2,h3,h4,h5</code> - Wraps the highlighted text in the given header tag</li>
+<li><code>p</code> - Wraps the highlighted text in a <code>&lt;p&gt;</code> tag</li>
+<li><code>pre</code> - Wraps the highlighted text in a <code>&lt;pre&gt;</code> tag</li>
+<li><code>blockquote</code> - Wraps the highlighted text in a <code>&lt;blockquote&gt;</code> tag</li>
+<li><code>bold</code> - Bolds the highlighted text</li>
+<li><code>italic</code> - Italicizes the highlighted text</li>
+<li><code>underline</code> - Underlines the highlighted text</li>
+<li><code>justifyLeft</code> - Aligns the text left</li>
+<li><code>justifyCenter</code> - Aligns the text center</li>
+<li><code>justifyRight</code> - Aligns the text right</li>
+<li><code>link</code> - Turns the highlighted text into a link</li>
+<li><code>placeholder</code> - Adds an image placeholder at the current cursor position</li>
+<li><code>insertOrderedList</code> - Inserts an ordered list</li>
+<li><code>insertUnorderedList</code> - Inserts an unordered list</li>
+</ul>
+<h3 id="example_1">Example</h3>
+<pre><code>&lt;div cs-editable cs-format=&quot;bold,italic&quot;&gt;Text&lt;/text&gt;
+</code></pre>
+
+<h3 id="screenshot_1">Screenshot</h3>
+<p><img alt="cs-format Screenshot" src="../../img/cs-format.png" /></p>
+<hr />
+<h2 id="cs-button">cs-button</h2>
+<p><code>cs-button</code> must be used on a link element. It let's the client change the href attribute but it
+does not allow the element to be unlinked.</p>
+<h3 id="example_2">Example</h3>
+<pre><code>&lt;a href=&quot;&quot; class=&quot;button&quot; cs-button&gt;Click Here To Enter&lt;/a&gt;
+</code></pre>
+
+<h3 id="screenshot_2">Screenshot</h3>
+<p><img alt="cs-button Screenshot" src="../../img/cs-button.png" /></p>
+<hr />
+<h2 id="cs-link">cs-link</h2>
+<p>The <code>cs-link</code> attribute allows the client to change the href attribute or unlink the element. All
+<code>&lt;a&gt;</code> tags will be automatically given a cs-link attribute so you don't have to manually add this
+attribute anywhere.</p>
+<h3 id="screenshot_3">Screenshot</h3>
+<p><img alt="cs-link Screenshot" src="../../img/cs-link.png" /></p>
+<hr />
+<h2 id="cs-placeholder">cs-placeholder</h2>
+<p>The <code>cs-placeholder</code> attribute must be added to an <code>&lt;img&gt;</code> tag. This attribute will update the <code>src</code> 
+attribute on the <code>&lt;img&gt;</code> tag with our own placeholder image.</p>
+<p><code>cs-placeholder</code> also adds image edit/upload capabilities to the placeholder image.</p>
+<p>Please set the width and height attributes on the <code>&lt;img&gt;</code>. This will let our clients know which image
+size to upload.</p>
+<h3 id="example_3">Example</h3>
+<pre><code>&lt;img cs-placeholder width=&quot;500&quot; height=&quot;350&quot; /&gt;
+</code></pre>
+
+<h3 id="compiled">Compiled</h3>
+<pre><code>&lt;img src=&quot;http://app.crowdskout.com/placeholder.png&quot; width=&quot;500&quot; height=&quot;350&quot;/&gt;
+</code></pre>
+
+<h3 id="screenshot_4">Screenshot</h3>
+<p><img alt="cs-placeholder Screenshot" src="../../img/cs-placeholder.png" /></p>
+<hr />
+<h2 id="cs-src">cs-src</h2>
+<p>The <code>cs-src</code> attribute must be used on an <code>&lt;img&gt;</code> tag. This attribute should be used when the <code>&lt;img&gt;</code> <code>src</code> attribute is a variable, otherwise we will get a 404 error.  </p>
+<p>If we apply the variable immediately to the <code>src</code> attribute, the browser will fetch it as an image, which will not exist. We first need to parse the variable before setting the <code>src</code> attribute. This is the purpose of <code>cs-src</code>.</p>
+<h3 id="example_4">Example</h3>
+<pre><code>&lt;img cs-src=&quot;cs::organization-url&quot; /&gt;
+</code></pre>
+
+<h3 id="compiled_1">Compiled</h3>
+<pre><code>&lt;img src=&quot;http://organization.com&quot; /&gt;
+</code></pre>
+
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../variable-reference" class="btn btn-neutral float-right" title="Variable Reference"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Main Documentation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../variable-reference" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>

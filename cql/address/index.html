@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Criteria: Address Reference - Crowdskout Developer Documentation</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Crowdskout Developer Documentation</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+        <span>Developing Email Templates</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates">Main Documentation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/attribute-reference">Attribute Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/variable-reference">Variable Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/example-template">Example Template</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/testing-template">Testing Templates</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Crowdskout Query Language</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="..">Main Documentation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../demographics">Criteria: Demographics Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 current">
+                    <a class="current" href=".">Criteria: Address Reference</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l2"><a href="#address">Address</a></li>
+                            
+                                <li><a class="toctree-l3" href="#region">Region</a></li>
+                            
+                                <li><a class="toctree-l3" href="#city">City</a></li>
+                            
+                                <li><a class="toctree-l3" href="#postal-code">Postal Code</a></li>
+                            
+                                <li><a class="toctree-l3" href="#county">County</a></li>
+                            
+                                <li><a class="toctree-l3" href="#geographical-polygon">Geographical Polygon</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../affiliations">Criteria: Affiliations Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../civic">Criteria: Civic Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../data-exists">Criteria: Data Exists Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../inferred-digital">Criteria: Inferred Digital Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../interactions">Criteria: Interactions Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../interests">Criteria: Interests Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../political-districts">Criteria: Political Districts Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../custom">Criteria: Custom</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../.."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    <li>Criteria: Address Reference</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="address">Address</h1>
+<h2 id="region">Region</h2>
+<p>People who live in a specific region.</p>
+<h3 id="criterion-region">Criterion <code>Region</code></h3>
+<p>This takes values dependent on the data available to you, but will contain all the states you have individuals.</p>
+<h3 id="filters">Filters</h3>
+<ul>
+<li><code>County</code> - <em>Optional</em> - People who live in a specific county within the region, it will conflict with the <code>City</code> filter if both are applied</li>
+<li><code>City</code> - <em>Optional</em> - People who live in a specific city within the region, it will conflict with the <code>County</code> filter if both are applied </li>
+</ul>
+<h3 id="examples">Examples</h3>
+<p>People who live in Illinois:</p>
+<pre><code>(Region = &quot;Illinois&quot;)
+</code></pre>
+
+<hr />
+<h2 id="city">City</h2>
+<p>People who live in a specific city.</p>
+<h3 id="criterion-city">Criterion <code>City</code></h3>
+<p>This allows values dependent on the data available to you.</p>
+<h3 id="filters_1">Filters</h3>
+<ul>
+<li><code>Region</code> - <em>Required</em> - The region that the city we're looking for lies in</li>
+</ul>
+<h3 id="examples_1">Examples</h3>
+<p>People who live in Chicago, Illinois:</p>
+<pre><code>(City = &quot;Chicago&quot;, Region = &quot;Illinois&quot;)
+</code></pre>
+
+<hr />
+<h2 id="postal-code">Postal Code</h2>
+<p>People who live in a specific postal code.</p>
+<h3 id="criterion-postalcode">Criterion <code>PostalCode</code></h3>
+<p>Allows either a 5 digit zip code, or a 5 digit zip code plus 4 more digits separated by a dash.</p>
+<h3 id="examples_2">Examples</h3>
+<p>People who live in 60637:</p>
+<pre><code>(PostalCode = &quot;60637&quot;)
+</code></pre>
+
+<p>People who live in 60637-1756:</p>
+<pre><code>(PostalCode = &quot;60637-1756&quot;)
+</code></pre>
+
+<hr />
+<h2 id="county">County</h2>
+<p>People who live in a specific county.</p>
+<h3 id="criterion-county">Criterion <code>County</code></h3>
+<p>The values this can take depend on your available data.</p>
+<h3 id="filters_2">Filters</h3>
+<ul>
+<li><code>Region</code> - <em>Required</em> - The state this county belongs in</li>
+</ul>
+<h3 id="examples_3">Examples</h3>
+<p>People who live in Cook County, Illinois:</p>
+<pre><code>(County = &quot;Cook&quot;, Region = &quot;Illinois&quot;)
+</code></pre>
+
+<hr />
+<h2 id="geographical-polygon">Geographical Polygon</h2>
+<p>Allows you to find people within a polygon on a map.</p>
+<h3 id="criterion-polygon">Criterion <code>Polygon</code></h3>
+<p>This takes a <a href="http://geojson.org/geojson-spec.html">GeoJSON</a> encoded polygon string.</p>
+<h3 id="examples_4">Examples</h3>
+<p>People who live within the polygon bounded by the latitude, and longitude points [0, 0], [80, 0], [80, 40], [0, 40]:</p>
+<pre><code>(Polygon = &quot;[[[0,0], [80,0], [80,40], [0,40]]]&quot;)
+</code></pre>
+
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../affiliations" class="btn btn-neutral float-right" title="Criteria: Affiliations Reference"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../demographics" class="btn btn-neutral" title="Criteria: Demographics Reference"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../demographics" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../affiliations" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>

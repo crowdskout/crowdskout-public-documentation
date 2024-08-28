@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Criteria: Demographics Reference - Crowdskout Developer Documentation</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Crowdskout Developer Documentation</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+        <span>Developing Email Templates</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates">Main Documentation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/attribute-reference">Attribute Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/variable-reference">Variable Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/example-template">Example Template</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/testing-template">Testing Templates</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Crowdskout Query Language</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="..">Main Documentation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 current">
+                    <a class="current" href=".">Criteria: Demographics Reference</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l2"><a href="#demographics">Demographics</a></li>
+                            
+                                <li><a class="toctree-l3" href="#business-owner">Business Owner</a></li>
+                            
+                                <li><a class="toctree-l3" href="#veteran">Veteran</a></li>
+                            
+                                <li><a class="toctree-l3" href="#gender">Gender</a></li>
+                            
+                                <li><a class="toctree-l3" href="#religion">Religion</a></li>
+                            
+                                <li><a class="toctree-l3" href="#ethnicity">Ethnicity</a></li>
+                            
+                                <li><a class="toctree-l3" href="#marital-status">Marital Status</a></li>
+                            
+                                <li><a class="toctree-l3" href="#age">Age</a></li>
+                            
+                                <li><a class="toctree-l3" href="#net-worth">Net Worth</a></li>
+                            
+                                <li><a class="toctree-l3" href="#annual-income">Annual Income</a></li>
+                            
+                                <li><a class="toctree-l3" href="#language">Language</a></li>
+                            
+                                <li><a class="toctree-l3" href="#current-student">Current Student</a></li>
+                            
+                                <li><a class="toctree-l3" href="#education">Education</a></li>
+                            
+                                <li><a class="toctree-l3" href="#dwelling-ownership">Dwelling Ownership</a></li>
+                            
+                                <li><a class="toctree-l3" href="#dwelling-type">Dwelling Type</a></li>
+                            
+                                <li><a class="toctree-l3" href="#dwelling-value">Dwelling Value</a></li>
+                            
+                                <li><a class="toctree-l3" href="#children">Children</a></li>
+                            
+                                <li><a class="toctree-l3" href="#currently-employed">Currently Employed</a></li>
+                            
+                                <li><a class="toctree-l3" href="#occupation">Occupation</a></li>
+                            
+                                <li><a class="toctree-l3" href="#employer">Employer</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../address">Criteria: Address Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../affiliations">Criteria: Affiliations Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../civic">Criteria: Civic Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../data-exists">Criteria: Data Exists Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../inferred-digital">Criteria: Inferred Digital Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../interactions">Criteria: Interactions Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../interests">Criteria: Interests Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../political-districts">Criteria: Political Districts Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../custom">Criteria: Custom</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../.."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    <li>Criteria: Demographics Reference</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="demographics">Demographics</h1>
+<h2 id="business-owner">Business Owner</h2>
+<p>People who consider themselves business owners.</p>
+<h3 id="criterion-businessowner">Criterion: <code>BusinessOwner</code></h3>
+<ul>
+<li><code>Yes</code> - Finds people who are a business owner</li>
+<li><code>No</code> - Finds people who are not a business owner</li>
+</ul>
+<h3 id="example">Example</h3>
+<p>People who consider themselves a business owner:</p>
+<pre><code>(BusinessOwner = &quot;Yes&quot;)
+</code></pre>
+
+<hr />
+<h2 id="veteran">Veteran</h2>
+<p>People who have previously served in the armed services.</p>
+<h3 id="criterion-veteran">Criterion: <code>Veteran</code></h3>
+<ul>
+<li><code>Yes</code> - Finds people who are a veteran</li>
+<li><code>No</code> - Finds people who are not a veteran</li>
+</ul>
+<h3 id="example_1">Example</h3>
+<p>People who are not veterans:</p>
+<pre><code>(Veteran = &quot;No&quot;)
+</code></pre>
+
+<hr />
+<h2 id="gender">Gender</h2>
+<p>Segments people by their gender.</p>
+<h3 id="criterion-gender">Criterion: <code>Gender</code></h3>
+<ul>
+<li><code>Male</code> - Finds men</li>
+<li><code>Female</code> - Finds women</li>
+</ul>
+<h3 id="example_2">Example</h3>
+<p>People who are men</p>
+<pre><code>(Gender = &quot;Male&quot;)
+</code></pre>
+
+<hr />
+<h2 id="religion">Religion</h2>
+<p>Segments people by their religion.</p>
+<h3 id="criterion-religion">Criterion: <code>Religion</code></h3>
+<p>This criterion populates based on the available data.</p>
+<h3 id="example_3">Example</h3>
+<p>People who are Catholic:</p>
+<pre><code>(Religion = &quot;Catholic&quot;)
+</code></pre>
+
+<hr />
+<h2 id="ethnicity">Ethnicity</h2>
+<p>Segments people based on their religion.</p>
+<h3 id="criterion-ethnicity">Criterion: <code>Ethnicity</code></h3>
+<p>Segments people who are identified by the following ethnicity:</p>
+<ul>
+<li><code>White</code></li>
+<li><code>Black</code></li>
+<li><code>Asian</code></li>
+<li><code>Hispanic</code></li>
+<li><code>Native American</code></li>
+<li><code>Pacific Islander</code></li>
+<li><code>Other</code></li>
+</ul>
+<h3 id="example_4">Example</h3>
+<p>People who are Hispanic:</p>
+<pre><code>(Ethnicity = &quot;Hispanic&quot;)
+</code></pre>
+
+<hr />
+<h2 id="marital-status">Marital Status</h2>
+<p>Segments people based on their relationship status</p>
+<h3 id="criterion-maritalstatus">Criterion: <code>MaritalStatus</code></h3>
+<ul>
+<li><code>Single</code> - Finds people who are single</li>
+<li><code>Married</code> - Finds people who are married</li>
+<li><code>Divorced</code> - Finds people who are divorced</li>
+<li><code>Widowed</code> - Finds people who are widowed</li>
+<li><code>Separated</code> - Finds people who are married, but currently separated from their spouse</li>
+<li><code>Domesitcally Partnered</code> - People who are in a domestic partnership</li>
+</ul>
+<h3 id="example_5">Example</h3>
+<p>People who are married:</p>
+<pre><code>(MaritalStatus = &quot;Married&quot;)
+</code></pre>
+
+<hr />
+<h2 id="age">Age</h2>
+<p>Allows segmenting people based on their age</p>
+<h3 id="criterion-age">Criterion: <code>Age</code></h3>
+<p>Age accepts a number range, represented in bracket notation. For people under a certain age, the lower bound should be <code>0</code>.
+To find people above a certain age, the upper bound should be <code>0</code>.</p>
+<h3 id="example_6">Example</h3>
+<p>People who are exactly 42:</p>
+<pre><code>(Age = 42)
+</code></pre>
+
+<p>People who are above the age of 64:</p>
+<pre><code>(Age = [64, 0])
+</code></pre>
+
+<p>People who are between the ages of 18 and 25:</p>
+<pre><code>(Age = [18, 25])
+</code></pre>
+
+<hr />
+<h2 id="net-worth">Net Worth</h2>
+<p>Allows segmenting people based on their net worth</p>
+<h3 id="criterion-networth">Criterion: <code>NetWorth</code></h3>
+<p>Net worth accepts a number range, represented in bracket notation. For people under a certain net worth, the lower bound should be <code>0</code>.
+To find people above a certain net worth, the upper bound should be <code>0</code>.</p>
+<h3 id="example_7">Example</h3>
+<p>People who are worth exactly $10,000:</p>
+<pre><code>(NetWorth = 10000)
+</code></pre>
+
+<p>People who are worth more than $100,000:</p>
+<pre><code>(NetWorth = [100000, 0])
+</code></pre>
+
+<p>People who are worth between $50,000 and $100,000:</p>
+<pre><code>(NetWorth = [50000, 100000])
+</code></pre>
+
+<hr />
+<h2 id="annual-income">Annual Income</h2>
+<p>Allows segmenting people based on their income</p>
+<h3 id="criterion-income">Criterion: <code>Income</code></h3>
+<p>Income accepts a number range, represented in bracket notation. For people under a certain income, the lower bound should be <code>0</code>.
+To find people above a certain income, the upper bound should be <code>0</code>.</p>
+<h3 id="example_8">Example</h3>
+<p>People who make less than $25,000 a year</p>
+<pre><code>(Income = [0, 25000])
+</code></pre>
+
+<p>People who make more than $100,000:</p>
+<pre><code>(Income = [100000, 0])
+</code></pre>
+
+<p>People who make between $50,000 and $100,000:</p>
+<pre><code>(Income = [50000, 100000])
+</code></pre>
+
+<hr />
+<h2 id="language">Language</h2>
+<p>People who speak a specific language.</p>
+<h3 id="criterion-language">Criterion: <code>Language</code></h3>
+<p>Languages are populated based on available data.</p>
+<h3 id="example_9">Example</h3>
+<p>People who speak Spanish:</p>
+<pre><code>(Language = &quot;Spanish&quot;)
+</code></pre>
+
+<hr />
+<h2 id="current-student">Current Student</h2>
+<p>People who are currently students.</p>
+<h3 id="criterion-currentstudent">Criterion: <code>CurrentStudent</code></h3>
+<ul>
+<li><code>Yes</code> - Finds people who are currently a student</li>
+<li><code>No</code> - Finds people who are currently not a student</li>
+</ul>
+<h3 id="example_10">Example</h3>
+<p>People who are currently a student:</p>
+<pre><code>(CurrentStudent = &quot;Yes&quot;)
+</code></pre>
+
+<hr />
+<h2 id="education">Education</h2>
+<p>People who have completed a certain level of education</p>
+<h3 id="criterion-education">Criterion: <code>Education</code></h3>
+<ul>
+<li><code>High School</code> - People who have completed high school</li>
+<li><code>Undergraduate</code> - People who have completed an undergraduate degree</li>
+<li><code>Graduate</code> - People who have completed a graduate degree</li>
+<li><code>Field</code> - People who have studied in a certain education field</li>
+</ul>
+<h3 id="filters">Filters</h3>
+<ul>
+<li><code>GraduationYear</code> - <em>Optional</em> - Takes a number range that indicates graduation years</li>
+<li><code>Institution</code> - <em>Optional</em> - Takes in the name of an institution that the education was completed at</li>
+</ul>
+<h3 id="example_11">Example</h3>
+<p>People who have completed college:</p>
+<pre><code>(Education = &quot;Undergraduate&quot;)
+</code></pre>
+
+<p>People who have completed college after 1995:</p>
+<pre><code>(Education = &quot;Undergraduate&quot;, GraduationYear = [1995,0])
+</code></pre>
+
+<p>People who completed a graduate degree at Harvard University between the years of 1990 and 2000:</p>
+<pre><code>(Education = &quot;Graduate&quot;, GraduationYear = [1990, 2000], Institution = &quot;Harvard University&quot;)
+</code></pre>
+
+<p>People who completed an undergraduate degree in Psychology:</p>
+<pre><code>(Education = &quot;Undergraduate&quot;, Field = &quot;Psychology&quot;)
+</code></pre>
+
+<hr />
+<h2 id="dwelling-ownership">Dwelling Ownership</h2>
+<p>Segments people based on whether they own or rent their dwelling.</p>
+<h3 id="criterion-dwellingownership">Criterion: <code>DwellingOwnership</code></h3>
+<ul>
+<li><code>Own</code> - People who own their home</li>
+<li><code>Rent</code> - People who rent their home</li>
+</ul>
+<h3 id="example_12">Example</h3>
+<p>People who own their dwelling:</p>
+<pre><code>(DwellingOwnership = &quot;Own&quot;)
+</code></pre>
+
+<hr />
+<h2 id="dwelling-type">Dwelling Type</h2>
+<p>Segments people based on what type of dwelling they live in.</p>
+<h3 id="criterion-dwellingtype">Criterion <code>DwellingType</code></h3>
+<ul>
+<li><code>House</code> - People who live in a house</li>
+<li><code>Apartment</code> - People who live in an apartment</li>
+<li><code>Mobile Home</code> - People who live in a mobile home</li>
+<li><code>Condo</code> - People who live in a condominium</li>
+</ul>
+<h3 id="example_13">Example</h3>
+<p>People who live in an apartment:</p>
+<pre><code>(DwellingType = &quot;Apartment&quot;)
+</code></pre>
+
+<hr />
+<h2 id="dwelling-value">Dwelling Value</h2>
+<p>A number range that segments people based on the value of their dwelling</p>
+<h3 id="criterion-dwellingvalue">Criterion <code>DwellingValue</code></h3>
+<p>Takes in a number range for the value of the dwelling.</p>
+<h3 id="example_14">Example</h3>
+<p>People who live in a dwelling worth more than $500,000:</p>
+<pre><code>(DwellingValue = [500000, 0])
+</code></pre>
+
+<hr />
+<h2 id="children">Children</h2>
+<p>People who have children</p>
+<h3 id="criterion-children">Criterion: <code>Children</code></h3>
+<ul>
+<li><code>Yes</code> - People who have children</li>
+<li><code>No</code> - People who do not have children</li>
+</ul>
+<h3 id="filters_1">Filters</h3>
+<ul>
+<li><code>ChildAge</code> - <em>Optional</em> - Takes in a number range that is the age of a child in the house</li>
+<li><code>ChildGender</code> - <em>Optional</em> - Takes in the same options as the top level Gender criterion, segments down on child gender</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<p>People who do not have children:</p>
+<pre><code>(Children = &quot;No&quot;)
+</code></pre>
+
+<p>People who has a child between the ages of 12 and 18:</p>
+<pre><code>(Children = &quot;Yes&quot;, Age = [12, 18])
+</code></pre>
+
+<p>People who have a male child:</p>
+<pre><code>(Children = &quot;Yes&quot;, Gender = &quot;Male&quot;)
+</code></pre>
+
+<hr />
+<h2 id="currently-employed">Currently Employed</h2>
+<p>People who are actively employed.</p>
+<h3 id="criterion-currentlyemployed">Criterion <code>CurrentlyEmployed</code></h3>
+<ul>
+<li><code>Yes</code> - People who are currently employed</li>
+<li><code>No</code> - People who are not currently employed</li>
+</ul>
+<h3 id="examples_1">Examples</h3>
+<p>People who are currently employed:</p>
+<pre><code>(CurrentlyEmployed = &quot;Yes&quot;)
+</code></pre>
+
+<hr />
+<h2 id="occupation">Occupation</h2>
+<p>Segmenting down on people who are, or have ever been employed doing a specific job</p>
+<h3 id="criterion-occupation">Criterion: <code>Occupation</code></h3>
+<p>The values for this criterion vary depending on available data.</p>
+<h3 id="examples_2">Examples</h3>
+<p>People who are employed in management:</p>
+<pre><code>(Occupation = &quot;Management&quot;)
+</code></pre>
+
+<hr />
+<h2 id="employer">Employer</h2>
+<p>People who are employed or have been employed by a specific organization.</p>
+<h3 id="criterion-employer">Criterion <code>Employer</code></h3>
+<p>The values for this criterion vary depending on available data.</p>
+<h3 id="examples_3">Examples</h3>
+<p>People who are/were employed by Crowdskout:</p>
+<pre><code>(Employer = &quot;Crowdskout&quot;)
+</code></pre>
+
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../address" class="btn btn-neutral float-right" title="Criteria: Address Reference"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Main Documentation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../address" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>

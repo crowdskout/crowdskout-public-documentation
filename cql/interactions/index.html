@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Criteria: Interactions Reference - Crowdskout Developer Documentation</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Crowdskout Developer Documentation</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+        <span>Developing Email Templates</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates">Main Documentation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/attribute-reference">Attribute Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/variable-reference">Variable Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/example-template">Example Template</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../email-templates/testing-template">Testing Templates</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Crowdskout Query Language</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="..">Main Documentation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../demographics">Criteria: Demographics Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../address">Criteria: Address Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../affiliations">Criteria: Affiliations Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../civic">Criteria: Civic Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../data-exists">Criteria: Data Exists Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../inferred-digital">Criteria: Inferred Digital Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 current">
+                    <a class="current" href=".">Criteria: Interactions Reference</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l2"><a href="#interactions">Interactions</a></li>
+                            
+                                <li><a class="toctree-l3" href="#page-views">Page Views</a></li>
+                            
+                                <li><a class="toctree-l3" href="#donations">Donations</a></li>
+                            
+                                <li><a class="toctree-l3" href="#social-media-share">Social Media Share</a></li>
+                            
+                                <li><a class="toctree-l3" href="#social-media-engagement">Social Media Engagement</a></li>
+                            
+                                <li><a class="toctree-l3" href="#surveys">Surveys</a></li>
+                            
+                                <li><a class="toctree-l3" href="#quiz">Quiz</a></li>
+                            
+                                <li><a class="toctree-l3" href="#forms">Forms</a></li>
+                            
+                                <li><a class="toctree-l3" href="#daytrip">DayTrip</a></li>
+                            
+                                <li><a class="toctree-l3" href="#email-sends">Email Sends</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../interests">Criteria: Interests Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../political-districts">Criteria: Political Districts Reference</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../custom">Criteria: Custom</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../.."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    <li>Criteria: Interactions Reference</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="interactions">Interactions</h1>
+<h2 id="page-views">Page Views</h2>
+<p>People who have a page view attached to them</p>
+<h3 id="criterion-pageview">Criterion <code>PageView</code></h3>
+<ul>
+<li><code>Yes</code> - People who have viewed your web page</li>
+<li><code>No</code> - People who have not view your web page</li>
+</ul>
+<h3 id="filters">Filters</h3>
+<ul>
+<li><code>After</code> - <em>Optional</em> - Adds a date filter for which we'll only find people who've viewed your web page after</li>
+<li><code>Before</code> - <em>Optional</em> - Adds a date filter for which we'll only find people who've viewed your web page before</li>
+<li><code>Url</code> - <em>Optional</em> - Only people who've seen a specific web page, URLs will be stripped of</li>
+<li><code>Platform</code> - <em>Optional</em> - Only people who've viewed a web page on a specific browsing platform</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<p>People who have ever visited your web page:</p>
+<pre><code>(PageView = &quot;Yes&quot;)
+</code></pre>
+
+<p>People who have visited your web site on a mobile device before January 3, 2015:</p>
+<pre><code>(PageView = &quot;Yes&quot;, Platform = &quot;Mobile&quot;, Before = &quot;2015-01-03&quot;)
+</code></pre>
+
+<p>People who visited "http://crowdskout.com" sometime between November 1, 2014 and November 31, 2014:</p>
+<pre><code>(PageView = &quot;Yes&quot;, Url = &quot;http://crowdskout.com&quot;, After = &quot;2014-11-31&quot;, Before = &quot;2014-11-01&quot;)
+</code></pre>
+
+<hr />
+<h2 id="donations">Donations</h2>
+<p>People who have donated to an organization</p>
+<h3 id="criterion-donation">Criterion <code>Donation</code></h3>
+<ul>
+<li><code>Yes</code> - People who have donated at all</li>
+<li><code>No</code> - People who have no donations associated with them</li>
+</ul>
+<h3 id="filters_1">Filters</h3>
+<ul>
+<li><code>Organization</code> - <em>Optional</em> - A filter that limits people based on the organization they donated to</li>
+<li><code>Amount</code> - <em>Optional</em> - A number range that filters people based on the size of their donation</li>
+<li><code>Source</code> - <em>Optional</em> - A filter that limits the people based on how they made their donation</li>
+<li><code>Topic</code> - <em>Optional</em> - A filter that limits people to donations they've made to an organization associated with a specific topic</li>
+<li><code>PoliticalParty</code> - <em>Optional</em> - A filter that limits people to donations they've made to a specific political party - only returns political parties</li>
+<li><code>Before</code> - <em>Optional</em> - People who made their donation before a provided date</li>
+<li><code>After</code> - <em>Optional</em> - People who made their donation after a provided date</li>
+</ul>
+<h3 id="examples_1">Examples</h3>
+<p>People who've ever donated:</p>
+<pre><code>(Donation = &quot;Yes&quot;)
+</code></pre>
+
+<p>People who've made a gift to Crowdskout over $500:</p>
+<pre><code>(Donation = &quot;Yes&quot;, Organization = &quot;Crowdskout&quot;, Amount = [500, 0])
+</code></pre>
+
+<p>People who've made an online donation to a republican organization:</p>
+<pre><code>(Donation = &quot;Yes&quot;, Source = &quot;Online&quot;, PoliticalParty = &quot;Republican&quot;)
+</code></pre>
+
+<p>People who've made a gift to Crowdskout under $100 in 2012:</p>
+<pre><code>(Donation = &quot;Yes&quot;, Organization = &quot;Crowdskout&quot;, Amount = [0, 100], After = &quot;2011-12-31&quot;, Before = &quot;2013-01-01&quot;)
+</code></pre>
+
+<hr />
+<h2 id="social-media-share">Social Media Share</h2>
+<p>People who have shared your content on their social media.</p>
+<h3 id="criterion-socialshare">Criterion <code>SocialShare</code></h3>
+<ul>
+<li><code>Yes</code> - People who have shared your content</li>
+<li><code>No</code> - People who have not shared your content</li>
+</ul>
+<h3 id="filters_2">Filters</h3>
+<ul>
+<li><code>ShareService</code> - <em>Optional</em> - Identify a specific social service your content was shared on. Currently only supports <code>Facebook</code> and <code>Twitter</code>.</li>
+<li><code>Before</code> - <em>Optional</em> - People who engaged on social media before a provided date</li>
+<li><code>After</code> - <em>Optional</em> - People who engaged on social media after a provided date</li>
+</ul>
+<h3 id="example">Example</h3>
+<p>People who have shared my content:</p>
+<pre><code>(SocialShare = &quot;Yes&quot;)
+</code></pre>
+
+<p>People who have shared my content on Twitter:</p>
+<pre><code>(SocialShare = &quot;Yes&quot;, ShareService = &quot;Twitter&quot;)
+</code></pre>
+
+<p>People who shared my content on Twitter before 2015:</p>
+<pre><code>(SocialShare = &quot;Yes&quot;, ShareService = &quot;Twitter&quot;, Before = &quot;2015-01-01&quot;)
+</code></pre>
+
+<hr />
+<h2 id="social-media-engagement">Social Media Engagement</h2>
+<p>People who have engaged with your social media presence.</p>
+<h3 id="criterion-socialengage">Criterion <code>SocialEngage</code></h3>
+<ul>
+<li><code>Yes</code> - People who have engaged with your social media presence</li>
+<li><code>No</code> - People who have not engaged with your social media presence</li>
+</ul>
+<h3 id="filters_3">Filters</h3>
+<ul>
+<li><code>EngageService</code> - <em>Optional</em> - Identify a specific social media service you were engaged on. Currently only supports <code>Facebook</code> and <code>Twitter</code>.</li>
+<li><code>Before</code> - <em>Optional</em> - People who engaged on social media before a provided date</li>
+<li><code>After</code> - <em>Optional</em> - People who engaged on social media after a provided date</li>
+</ul>
+<h3 id="example_1">Example</h3>
+<p>People who engaged with me on social media:</p>
+<pre><code>(SocialEngage = &quot;Yes&quot;)
+</code></pre>
+
+<p>People who follow me on Twitter:</p>
+<pre><code>(SocialEngage = &quot;Yes&quot;, EngageService = &quot;Twitter&quot;)
+</code></pre>
+
+<p>People who've liked my page on Facebook:</p>
+<pre><code>(SocialEngage = &quot;Yes&quot;, EngageService = &quot;Facebook&quot;)
+</code></pre>
+
+<p>People who engaged with me on social media after January 1, 2015:
+ <code>(SocialEngage = "Yes", After = "2015-01-01")</code></p>
+<hr />
+<h2 id="surveys">Surveys</h2>
+<p>People who have filled out a survey I created.</p>
+<h3 id="criterion-survey">Criterion <code>Survey</code></h3>
+<p>Takes the name of a survey that you've created.</p>
+<h3 id="filters_4">Filters</h3>
+<ul>
+<li><code>Question</code> - <em>Optional</em> - People who have answered a specific question in that survey</li>
+<li><code>Answer</code> - <strong>Requires the <code>Question</code> filter be present</strong> - <em>Optional</em> - People who have given a specific answer in the survey</li>
+<li><code>Observation</code> - <em>Optional</em> - People who have been observed for a specific observation while running the survey</li>
+<li><code>ObservationAnswer</code> - <strong>Requires the <code>Observation</code> filter be present</strong> - <em>Optional</em> - People who have been observed a specific way while running the survey</li>
+<li><code>Before</code> - <em>Optional</em> - People who filled out the survey before a provided date</li>
+<li><code>After</code> - <em>Optional</em> - People who filled out the survey after a provided date</li>
+</ul>
+<h3 id="example_2">Example</h3>
+<p>People who have filled out a survey named "Crowdskout Opinion Poll":</p>
+<pre><code>(Survey = &quot;Crowdskout Opinion Poll&quot;)
+</code></pre>
+
+<p>People who gave the answer "Yes" to the question "Do you love Crowdskout?" in the "Crowdskout Opinion Poll":</p>
+<pre><code>(Survey = &quot;Crowdskout Opinion Poll&quot;, Question = &quot;Do you love Crowdskout?&quot;, Answer = &quot;Yes&quot;)
+</code></pre>
+
+<p>People who filled out a survey named "Crowdskout Opinion Poll" in January 2015</p>
+<pre><code>(Survey = &quot;Crowdskout Opinion Poll&quot;, After = &quot;2014-12-31&quot;, Before = &quot;2015-02-01&quot;)
+</code></pre>
+
+<p>People who were observed to be a parent during the Crowdskout Opinion Poll in 2015:</p>
+<pre><code>(Survey = &quot;Crowdskout Opinion Poll&quot;, Observation = &quot;Parent?&quot;, ObservationAnswer = &quot;Yes&quot;, After = &quot;2014-12-31&quot;)
+</code></pre>
+
+<hr />
+<h2 id="quiz">Quiz</h2>
+<p>People who have filled out a quiz I created.</p>
+<h3 id="criterion-quiz">Criterion <code>Quiz</code></h3>
+<p>Takes the name of a quiz that you've created.</p>
+<h3 id="filters_5">Filters</h3>
+<ul>
+<li><code>Question</code> - <em>Optional</em> - People who have answered a specific question in that quiz</li>
+<li><code>Answer</code> - <strong>Requires the <code>Question</code> filter be present</strong> - <em>Optional</em> - People who have given a specific answer in the quiz</li>
+<li><code>Before</code> - <em>Optional</em> - People who filled out the quiz before a provided date</li>
+<li><code>After</code> - <em>Optional</em> - People who filled out the quiz after a provided date</li>
+</ul>
+<h3 id="example_3">Example</h3>
+<p>People who have filled out a quiz named "Which ice cream flavor are you?":</p>
+<pre><code>(Quiz = &quot;Which ice cream flavor are you?&quot;)
+</code></pre>
+
+<p>People who gave the answer "Yes" to the question "Do you like adventures?" in the "Which ice cream flavor are you?" quiz:</p>
+<pre><code>(Quiz = &quot;Which ice cream flavor are you?&quot;, Question = &quot;Do you like adventures?&quot;, Answer = &quot;Yes&quot;)
+</code></pre>
+
+<p>People who filled out a quiz named "Which ice cream flavor are you?" in January 2015</p>
+<pre><code>(Survey = &quot;Which ice cream flavor are you?&quot;, After = &quot;2014-12-31&quot;, Before = &quot;2015-02-01&quot;)
+</code></pre>
+
+<hr />
+<h2 id="forms">Forms</h2>
+<p>Segments based on people who have filled out a specific form.</p>
+<h3 id="criterion-form">Criterion <code>Form</code></h3>
+<p>Takes the name of a form you've created.</p>
+<h3 id="filters_6">Filters</h3>
+<ul>
+<li><code>Before</code> - <em>Optional</em> - People who filled out the form before a provided date</li>
+<li><code>After</code> - <em>Optional</em> - People who filled out the form after a provided date</li>
+</ul>
+<h3 id="example_4">Example</h3>
+<p>People who filled out a form called "Crowdskout Newsletter Sign Up":</p>
+<pre><code>(Form = &quot;Crowdskout Newsletter Sign Up&quot;)
+</code></pre>
+
+<p>People who filled out a form called "Crowdskout Newsletter Sign Up" before 2015:</p>
+<pre><code>(Form = &quot;Crowdskout Newsletter Sign Up&quot;, Before = &quot;2015-01-01&quot;)
+</code></pre>
+
+<hr />
+<h2 id="daytrip">DayTrip</h2>
+<p>Segments based on people who have had their door knocked by you.</p>
+<h3 id="criterion-daytrip">Criterion <code>DayTrip</code></h3>
+<ul>
+<li><code>Yes</code> - People who have ever had their door knocked by you.</li>
+<li><code>No</code> - People who have not had their door knocked by you.</li>
+</ul>
+<h3 id="filters_7">Filters</h3>
+<ul>
+<li><code>DayTripName</code> - <em>Optional</em> - People who had their door knocked during a specific DayTrip</li>
+<li><code>Route</code> - <strong>Requires the <code>Name</code> filter</strong> - <em>Optional</em> - People who have had their door knocked on a specific route during a specific DayTrip</li>
+<li><code>KnockResult</code> - <em>Optional</em> People who had a specific result to their door being knocked, takes the values: <code>Not Home</code>, <code>Refused</code>, and <code>Survey Ran</code></li>
+<li><code>SurveyName</code> - <em>Optional</em> - People who had a specific survey filled out when their door was knocked</li>
+<li><code>Before</code> - <em>Optional</em> - People who had their door knocked before a provided date</li>
+<li><code>After</code> - <em>Optional</em> - People who had their door knocked after a provided date</li>
+</ul>
+<h3 id="example_5">Example</h3>
+<p>People who had their door knocked during the "Chicago Canvassing" DayTrip:</p>
+<pre><code>(DayTrip = &quot;Yes&quot;, Name = &quot;Chicago Canvassing&quot;)
+</code></pre>
+
+<p>People whose doors were knocked on, but they were not home in January 2015:</p>
+<pre><code>(DayTrip = &quot;Yes&quot;, KnockResult = &quot;Not Home&quot;, After = &quot;12-31-2015&quot;)
+</code></pre>
+
+<hr />
+<h2 id="email-sends">Email Sends</h2>
+<p>Segments people based on whether emails were sent to them.</p>
+<h3 id="criterion-emailsend">Criterion <code>EmailSend</code></h3>
+<ul>
+<li><code>Yes</code> - People who have had an email sent to them</li>
+<li><code>No</code> - People who have not had an email sent to them</li>
+</ul>
+<h3 id="filters_8">Filters</h3>
+<ul>
+<li><code>Emailing</code> - <em>Optional</em> - People who were sent a specific emailing</li>
+<li><code>Opened</code> - <em>Optional</em> - People who've opened an email sent to them, when paired with <code>Emailing</code> it restricts to having opened that emailing</li>
+<li><code>Clicked</code> - <em>Optional</em> - People who've clicked a link an email, when paired with <code>Emailing</code> it restricts to having opened that emailing</li>
+<li><code>ClickedUrl</code> - <strong>Required <code>Emailing</code> filter</strong> - <em>Optional</em> - People who clicked a URL in an email sent to them, when paired with <code>Emailing</code> it restricts to people who clicked this URL in that emailing</li>
+</ul>
+<h3 id="example_6">Example</h3>
+<p>People who were sent an emailing called "March Newsletter":</p>
+<pre><code>(EmailSend = &quot;Yes&quot;, Emailing = &quot;March Newsletter&quot;)
+</code></pre>
+
+<p>People who've opened an emailing sent to them:</p>
+<pre><code>(EmailSend = &quot;Yes&quot;, Opened = &quot;Yes&quot;)
+</code></pre>
+
+<p>People who've clicked a URL in the "March Newsletter":</p>
+<pre><code>(EmailSend = &quot;Yes&quot;, Emailing = &quot;March Newsletter&quot;, Clicked = &quot;Yes&quot;)
+</code></pre>
+
+<p>People who've clicked a link to "http://crowdskout.com/donate":</p>
+<pre><code>(EmailSend = &quot;Yes&quot;, ClickedUrl = &quot;http://crowdskout.com/donate&quot;)
+</code></pre>
+
+<p>People who've clicked a link to "http://crowdskout.com/donate" in the emailing: "March Donor Outreach"</p>
+<pre><code>(EmailSend = &quot;Yes&quot;, Emailing = &quot;March Donor Outreach&quot;, ClickedUrl = &quot;http://crowdskout.com/donate&quot;)
+</code></pre>
+
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../interests" class="btn btn-neutral float-right" title="Criteria: Interests Reference"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../inferred-digital" class="btn btn-neutral" title="Criteria: Inferred Digital Reference"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../inferred-digital" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../interests" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>
